@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: rgba(22, 114, 108, 1);
+}
+
+/* Barre de navigation */
+
+nav {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background: rgba(49, 29, 29, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+}
+
+nav img {
+    height: 57px;
+    margin: 0 20px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 0, 0, 1);
+    height: 100vh;
+}
+
+header h1 {
+    color: rgba(246, 239, 239, 1);
+    font-size: 41px;
+    font-family: 'Bruno Ace SC';
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+/* Sommaire */
+
+.Sommaire {
+    background: url(assests/background-som.jpg) fixed center/cover no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tr tr tr"
+    "som ssom ssom"
+    "som ssom ssom";
+    height: 40vh;
+    gap: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.titre {
+    margin: 0 20px;
+    grid-area: tr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+}
+
+.contenu{
+    margin: 0 30px;
+    grid-area: som;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script';
+
+    font-size: 20px;
+}
+
+.side-contenu {
+    grid-area: ssom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script';
+
+    font-size: 20px;
+}
