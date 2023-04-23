@@ -71,6 +71,10 @@ header h1 {
     font-family: 'Bruno Ace SC';
     text-decoration: underline;
     text-decoration-color: blue;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
 }
 
 /* Sommaire */
@@ -87,6 +91,7 @@ header h1 {
     height: 100vh;
     gap: 20px;
     color: rgba(255, 255, 255, 1);
+    user-select: none;
 }
 
 .Sommaire .titre {
@@ -105,13 +110,19 @@ header h1 {
     font-size: 35px;
 }
 
-.Sommaire li {
+.Sommaire li,
+.Sommaire li a{
     cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
     margin: 10px 0;
+    transition: 0.3s ease;
 }
 
-.Sommaire li:hover {
+.Sommaire li:hover,
+.Sommaire a:hover {
     color: rgb(109, 30, 30);
+    transform: scale(1.3) translateZ(100px);
 }
 
 .Sommaire .contenu{
