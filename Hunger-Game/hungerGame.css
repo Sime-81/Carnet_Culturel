@@ -172,7 +172,7 @@ header h1 {
 
 .opinion {
     background: url(asset/opinion.jpg) fixed center/cover no-repeat;
-    height: 150vh;
+    height: 200vh;
 
     display: flex;
     justify-content: center;
